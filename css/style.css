@@ -1,0 +1,30 @@
+body
+{
+	background-color: #7DE2D1;
+} 
+
+#content-area
+{
+	width: 48%;
+	height: 60em;
+	background-color: #DAF7DC;
+	margin: auto;
+	padding: 2px;
+	border-style: solid;
+	border-color: #DAF7DC;
+	border-width: 1.5px;
+	box-shadow: 8px 7px 7px #888888;
+}
+
+#quiz-header
+{
+	background-color: #fff;
+	margin: auto;
+	position:relative;
+	margin-top:-58em;
+	height:10em;
+	width:32em;
+
+
+
+}
