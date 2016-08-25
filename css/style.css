@@ -19,13 +19,18 @@ body
 #quiz-header
 {
 	height: 10em;
-	width: 32em;
+	width: 56.9em;
 	background-color: #A5D8FF;
 	border-color: #BFB6BB;
-	border-width: 6px;
+	border-width: 1.2px;
+	border-style: solid;
 	margin: auto;
-	margin-top: -58em;
+	margin-top: -60.47em;
 	position: relative;
+	/* Allow #header-text to move freely */
+	overflow: auto;
+	/* End */
+
 }
 
 #header-text
@@ -34,4 +39,10 @@ body
 	margin: 0;
 	padding: 0;
 	/* End */
+	position: relative;
+	margin-left: 5.2em;
+	margin-top: 2.1em;
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 32px;
+    font-weight:250;
 }
