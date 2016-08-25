@@ -12,19 +12,26 @@ body
 	padding: 2px;
 	border-style: solid;
 	border-color: #DAF7DC;
-	border-width: 1.5px;
+	border-width: 2px;
 	box-shadow: 8px 7px 7px #888888;
 }
 
 #quiz-header
 {
-	background-color: #fff;
+	height: 10em;
+	width: 32em;
+	background-color: #A5D8FF;
+	border-color: #BFB6BB;
+	border-width: 6px;
 	margin: auto;
-	position:relative;
-	margin-top:-58em;
-	height:10em;
-	width:32em;
+	margin-top: -58em;
+	position: relative;
+}
 
-
-
+#header-text
+{
+	/* Remove Default Heading Space*/
+	margin: 0;
+	padding: 0;
+	/* End */
 }
