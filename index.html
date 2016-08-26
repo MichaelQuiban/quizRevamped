@@ -4,16 +4,28 @@
 	<meta charset="UTF-8">
 	<title>Language Quiz</title>
 	<link rel="stylesheet" href="css/style.css"> 
-	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400" rel="stylesheet">
 </head>
 <body>
+	<!--Blue Header -->
+	<div id="content-area">
+		<div id="quiz-header">
+			<h3 id="header-text">Let's understand code together.</h3>
+		</div>
 
-<div id= "content-area"></div>
-	<div id = "quiz-header">
-	<h3 id = "header-text">Code Facts</h2>
+		<!--Little header below the "Banner"-->
+		<p id="universal-para">Do you know the power of learning to code? Watch this <a href ="https://www.youtube.com/watch?v=STRPsW6IY8k&list=PL6nP0pVbY3tYaq2nzVptuub1H6p1yJat7" target="_blank">Video</a>.</p>
+		<p id="question"></p>
+		
+		 <!-- Submit Area-->
+	    <form id="answer-form">
+	      	<button type="radio" id="true">True</button>
+	      	<button type="radio" id="false">False</button>
+	      	<button type="submit" id="submit">Submit</button>
+	    </form>
 	</div>
-
+	<!-- Javascript-->
 <script src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-<script type="text/javascrispt" src="js/app.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>

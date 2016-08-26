@@ -1,4 +1,6 @@
-$(document).ready(function(){
+// Load all questions and answers for the user.
+
+$(document).ready(function()  {
 var currentQuestion = 0;
 var codeQuestions = [{
     q: "Code is a set of instructions (or rules) that computers can understand; it might be helpful to think of code as a recipe.",
@@ -17,11 +19,14 @@ var codeQuestions = [{
     choices: ["True", "False"],
     correct: 1
   }, {
-    q: "",
+    q: "Perl is sometimes known as the “Swiss-Army knife” of programming languages because of it’s multi-functionality.",
     choices: ["True", "False"],
     correct: 1
   }, {
-    q: "",
-    choices: ["Doctor Who", "The Office", "Jackie Chan Adventures", "이나정"],
-    correct: 3
+    q: "Tere are “low-level” and “high-level” coding languages. Lower-level languages more closely resemble binary code while higher-level languages are easier to code in",
+    choices: ["True, False"],
+    correct:1
   }];
+
+
+  
