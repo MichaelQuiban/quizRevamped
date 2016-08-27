@@ -7,6 +7,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400" rel="stylesheet">
 </head>
 <body>
+	<!-- New game button -->
+	<h3><a href ='#' id = "new-game">New Game + </a></h3>
+
+
 	<!--Blue Header -->
 	<div id="content-area">
 		<div id="quiz-header">
@@ -19,8 +23,8 @@
 		
 		 <!-- Submit Area-->
 	    <form id="answer-form">
-	      	<button type="radio" id="true">True</button>
-	      	<button type="radio" id="false">False</button>
+	      	<input type="radio" id="true" name="answer-choice" value="true">True
+	      	<input type="radio" id="false" name="answer-choice" value="false">False<br>
 	      	<button type="submit" id="submit">Submit</button>
 	    </form>
 	</div>
