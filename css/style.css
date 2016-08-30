@@ -40,6 +40,7 @@ body {
 	margin-top: 4em;
 	font-family: 'Cormorant Garamond', serif;
 	text-align: center;
+	font-weight:bold;
 }
 
 #answer-form {
@@ -49,8 +50,12 @@ body {
 	color: #5E6472;
 	letter-spacing: 5px;
 	font-size: 1em;
+	font-weight: bold;
 }
 
+#answer-form:hover{
+	font-weight: bold;
+}
 /* Radio button spacing */
 
 input[type="radio"]{
@@ -98,7 +103,10 @@ h3:hover {
 /* End */
 
 #question {
-	margin-left: 5%;
-	margin-top: 8%;
-	position:absolute;
+	margin-left: 18%;
+	margin-top: 5%;
+	position: absolute;
+	font-size: 1.2em;
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: bold;
 }
