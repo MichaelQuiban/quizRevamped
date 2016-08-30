@@ -29,5 +29,35 @@ $(document).ready(function()  {
   }];
 });
 
+
+function nextquestion(codeQuestions,currentQuestion){
+  for (currentQuestion = 0; )
+
+}
+  
+
+
+
+
   //Get the input from the user
+
+//submitting questions
+
+// Counter
+
+//  Display question
+
+// Submit event on form
+
+// Get submit event, evaluate the answer right/wrong
+
+// Running score, true or false.
+
+// Increment the counter, questions.
+
+// Display next question
+
+// Counter > array.length > jump to final answer
+
+// Replace the ID paragraph.
 

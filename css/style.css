@@ -1,11 +1,10 @@
 body {
-	background-color: #7DE2D1;
-} 
-
+	background-color: #474448;
+}
 #content-area {
 	width: 48%;
 	height: 60em;
-	background-color: #DAF7DC;
+	background-color: #FFFCF7;
 	margin: auto;
 	padding: 2px;
 	border-style: solid;
@@ -17,7 +16,7 @@ body {
 #quiz-header {
 	height: 10em;
 	width: 56.9em;
-	background-color: #A5D8FF;
+	background-color: #E3E7D3;
 	border: solid 1px #BFB6BB;
 	margin: auto;
 	/* Allow #header-text to move freely */
@@ -45,28 +44,61 @@ body {
 
 #answer-form {
 	margin: 0 auto;
-	width: 50%;
-	margin-top:20%;
+	margin-top:35%;
+	margin-left: 32%;
+	color: #5E6472;
+	letter-spacing: 5px;
+	font-size: 1em;
 }
 
-h3{
+/* Radio button spacing */
+
+input[type="radio"]{
+    margin: 20px 20px 20px;
+}
+
+#submit {
+	border-style: none;
+	outline-style: none;
+	font-size: 1.5em;
+	border: solid 1px #5E6472;
+	background-color: #FFFCF7;
+	font-family: 'Cormorant Garamond', serif;
+	margin-left: 9%;
+}
+
+#submit:hover {
+	opacity: 0.8;
+	font-size: 1.7em;
+}
+
+
+/* New game button madness */
+h3 {
 	margin: 0;
 	padding: 0;
 	font-family: 'Cormorant Garamond', serif;
 	font-weight: bold;
 }
 
-h3:hover{
+h3:hover {
 	color: #232528;
 	font-size: 1.5em;
 	font-weight: bold;
 }
 
-#new-game{
+#new-game {
 	text-decoration: none;
 	padding: 0;
 	margin: 0;
-	color: #232528;
-	margin-left: 90%;
+	color: #E3E7D3;
+	margin-left: 87%;
+	position: absolute;
 }
+/* End */
 
+#question {
+	margin-left: 5%;
+	margin-top: 8%;
+	position:absolute;
+}
