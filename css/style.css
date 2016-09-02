@@ -77,7 +77,6 @@ input[type="radio"]{
 	font-size: 1.7em;
 }
 
-
 /* New game button madness */
 h3 {
 	margin: 0;
@@ -107,6 +106,13 @@ h3:hover {
 	margin-top: 5%;
 	position: absolute;
 	font-size: 1.2em;
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: bold;
+}
+
+#counter{
+	margin-left: 45%;
+	margin-top: 5%;
 	font-family: 'Cormorant Garamond', serif;
 	font-weight: bold;
 }
