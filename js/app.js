@@ -37,8 +37,12 @@ $(document).ready(function() {
   //Array to store answers
   var storeAnswers = [];
 
+  // New Game Button
+  $("#new-game").click(function(){
+    newGame();
+  });
+
   //Display question
-  //Issue: Question currently does not display.
   function displayQuestion(question) {
     console.log("Displaying Question...");
     $("#question").text(quiz.questions[question].q);
@@ -51,25 +55,30 @@ $(document).ready(function() {
   //Submit on this form, do these things.
   $("#answer-form").submit(function(e) {
     e.preventDefault();
-    console.log("answer");
+    console.log("Submitting Answer...");
     var answer = $("input[name='answer-choice']:checked").val();
     storeAnswers.push(answer);
     currentQuestion++;
     $("#counter").text(currentQuestion + "/" + quiz.questions.length)
     if (checkAnswer(answer)) {
+      //Counter currenly surpasses the question value of 6.
       score++;
     }
   });
-  //Listen for answer
-  //Process answer
-  //Increment score
-  //Get feedback from user true, false
-  //Go to next question
+
   //End of quiz? Display results
   function startQuiz() {
-    console.log("start Quiz"); 
+    console.log("Starting Quiz..."); 
     displayQuestion(currentQuestion); 
   }
 
   startQuiz();
+
+  function newGame(){
+    console.log("New Game Button Enabled...")
+    currentQuestion = 0;
+    $("#question").text(quiz.questions[question].q);
+    $("counter").text(0 + "/");
+  }
+
 });
