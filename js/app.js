@@ -38,8 +38,9 @@ $(document).ready(function() {
   var storeAnswers = [];
 
   //Display question
+  //Issue: Question currently does not display.
   function displayQuestion(question) {
-    console.log("display question!")
+    console.log("Displaying Question...");
     $("#question").text(quiz.questions[question].q);
   }
 
@@ -51,8 +52,7 @@ $(document).ready(function() {
   $("#answer-form").submit(function(e) {
     e.preventDefault();
     console.log("answer");
-    // var answer = $("input[name='answer-choice']:checked").val();
-    console.log(answer);
+    var answer = $("input[name='answer-choice']:checked").val();
     storeAnswers.push(answer);
     currentQuestion++;
     $("#counter").text(currentQuestion + "/" + quiz.questions.length)
