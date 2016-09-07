@@ -1,11 +1,17 @@
 // Load all questions and answers for the user.
+var answer;
 
 $(document).ready(function() {
-  var currentQuestion = 0;
+  var currentQuestion = 1;
   var score = 0;
   var quiz = {
     name: "coding",
     questions:[
+      { 
+        q:"",
+        choices:"",
+        correct:""
+      },
       {
         q: "Computer programming is one of the fastest growing occupations currently",
         choices: ["True", "False"],
@@ -34,51 +40,53 @@ $(document).ready(function() {
     ]
   };
 
-  //Array to store answers
-  var storeAnswers = [];
-
   // New Game Button
-  $("#new-game").click(function(){
-    newGame();
-  });
+  //$("#new-game").click(function(){
+  // newGame();
+  //});
 
   //Display question
-  function displayQuestion(question) {
-    console.log("Displaying Question...");
-    $("#question").text(quiz.questions[question].q);
+  function displayQuestion(currentQuestion) {
+    $("#question").text(quiz.questions[currentQuestion].q);
   }
 
-  function checkAnswer(answer) {
-    return (answer === quiz.questions[currentQuestion].answer)
-  }
+  //Check if the answer is correct
+  function checkAnswer() {
+    if (answer === quiz.questions[currentQuestion].correct) {
+      score++;
+    } 
+    }
 
   //Submit on this form, do these things.
   $("#answer-form").submit(function(e) {
     e.preventDefault();
     console.log("Submitting Answer...");
-    var answer = $("input[name='answer-choice']:checked").val();
-    storeAnswers.push(answer);
+    //Answer = The value they put in.
+    answer = $("input[name='answer-choice']:checked").val();
+    console.log(currentQuestion);
+    checkAnswer();
+    displayQuestion(currentQuestion);
     currentQuestion++;
-    $("#counter").text(currentQuestion + "/" + quiz.questions.length)
-    if (checkAnswer(answer)) {
-      //Counter currenly surpasses the question value of 6.
-      score++;
-    }
   });
 
   //End of quiz? Display results
   function startQuiz() {
     console.log("Starting Quiz..."); 
-    displayQuestion(currentQuestion); 
+    //displayQuestion(currentQuestion); 
+    $("#counter").text((currentQuestion + 1) + "/" + ((quiz.questions.length) - 1));
   }
+
 
   startQuiz();
 
-  function newGame(){
+ //The newGame button is supposed to display question #1, included a debugging console.log to verify function.
+ //0 & "/" is the counter and the slash next to it, replacing these values only, not the total questions. **BUG**
+ /* function newGame(){
     console.log("New Game Button Enabled...")
     currentQuestion = 0;
-    $("#question").text(quiz.questions[question].q);
+    $("#question").text(quiz.questions[q].q);
     $("counter").text(0 + "/");
   }
+*/
 
 });
